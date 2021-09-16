@@ -1,8 +1,10 @@
 import requests
 import os
+from dotenv import load_dotenv
 
-token = os.environ.get('token')
-print(token)
+load_dotenv()
+
+token = os.environ.get('TOKEN')
 
 API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/paraphrase-xlm-r-multilingual-v1"
 headers = {"Authorization": f"Bearer {token}"}

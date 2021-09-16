@@ -1,0 +1,4 @@
+env
+sentence_transformers_model
+.env
+dataset
